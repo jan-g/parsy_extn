@@ -1,3 +1,6 @@
+__author__ = "jan grant <parsy-extn@ioctl.org>"
+__licence__ = "Apache License 2.0"
+
 import parsy
 
 

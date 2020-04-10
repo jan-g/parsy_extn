@@ -8,34 +8,15 @@ def read_file(fn):
 
 setup(
     name="parsy-extn",
-    version="0.0.1",
-    description="Small extensions to Parsy",
-    url="http://github.com/jan-g/parsy_extn",
-    long_description=read_file("README.md"),
-    author="jang",
-    author_email="parsy-extn@ioctl.org",
-    license="Apache License 2.0",
-
+    setup_requires=["setupmeta"],
+    versioning="dev",
+    url="http://github.com/jan-g/{name}",
     packages=find_packages(exclude=["test*"]),
-
-    install_requires=[
-                      "parsy",
-    ],
-
-    tests_require=[
-                    "pytest",
-                    "flake8",
-                    "wheel",
-    ],
 
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
         "Topic :: Software Development :: Compilers",
         "Topic :: Software Development :: Interpreters",
         "Topic :: Text Processing",
